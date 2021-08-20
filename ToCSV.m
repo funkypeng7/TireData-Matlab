@@ -4,7 +4,7 @@ function [] = ToCSV(filename)
     % Load in .mat file
     FileData = load(filename);
     % Specify the columns you want to extract
-    Columns = {'ET', 'AMBTMP', 'FX', 'FY', 'IA', 'MX', 'MZ', 'N', 'NFX', 'NFY', 'P', 'RE', 'RL', 'RST', 'RUN', 'SA', 'SL', 'SR', 'TSTC', 'TSTI', 'V'};
+    Columns = {'ET', 'AMBTMP', 'FX', 'FY', 'FZ', 'IA', 'MX', 'MZ', 'N', 'NFX', 'NFY', 'P', 'RE', 'RL', 'RST', 'RUN', 'SA', 'SL', 'SR', 'TSTC', 'TSTI', 'V'};
     
     % Intialize array of values
     M = zeros(length(FileData.ET), length(Columns));
